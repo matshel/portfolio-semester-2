@@ -1,6 +1,6 @@
 # Semester 2 Portfolio
 
-![image](https://github.com/Noroff-FEU-Assignments/project-exam-2-matshel/blob/main/public/images/home-holidaze.png)
+![image](https://github.com/matshel/portfolio-semester-2/blob/main/images/portfolio-semester-2.png)
 
 ## Description
 
