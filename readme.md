@@ -25,7 +25,7 @@ The site contains three projects from the last semester. These projects are:
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:Noroff-FEU-Assignments/project-exam-2-matshel.git
+git clone git@github.com:matshel/portfolio-semester-2.git
 ```
 
 ### Running
