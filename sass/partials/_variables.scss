@@ -1,0 +1,22 @@
+// fonts
+
+// font import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+// font types
+$font-type-primary: "Segoe UI", "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+// $font-type-primary: "Poppins", sans-serif;
+
+// font sizes
+$font-clamp-nano: clamp(12px, 8vw, 20px);
+$font-clamp-mini: clamp(16px, 8vw, 28px);
+$font-clamp-small: clamp(20px, 8vw, 30px);
+$font-clamp-big: clamp(40px, 8vw, 77px);
+$font-clamp-test: clamp(50px, 8vw, 100px);
+$font-clamp-cta-buttons: clamp(18px, 3vw, 30px);
+
+//colors
+$color-primary: #41335b;
+$color-primary-tinted: rgba(65, 51, 91, 0.8);
+$color-secondary: #191a1e;
+$color-tertiary: #707070;
+$color-neutral: #ffff;

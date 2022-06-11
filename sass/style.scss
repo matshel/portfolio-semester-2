@@ -1,0 +1,18 @@
+@import "./partials/variables";
+@import "./partials/mixins";
+
+body {
+  @include resets;
+  display: flex;
+  flex-direction: column;
+}
+
+@import "./partials/header";
+@import "./partials/c-navigation";
+@import "./partials/media-queries";
+@import "./partials/c-button";
+@import "./partials/c-card-project";
+@import "./partials/layout";
+@import "./partials/c-hero";
+@import "./partials/about";
+@import "./partials/footer";

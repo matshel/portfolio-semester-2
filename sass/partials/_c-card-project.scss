@@ -1,0 +1,52 @@
+.card-project {
+  &__image {
+    max-width: 555px;
+    width: 100%;
+    filter: drop-shadow(7px 7px 20px $color-primary-tinted);
+  }
+  &__title {
+    font-size: $font-clamp-mini;
+  }
+  &__technologies {
+    color: $color-tertiary;
+  }
+  &__info {
+    font-size: $font-clamp-nano;
+    max-width: 500px;
+    font-family: $font-type-primary;
+  }
+  &__links {
+    font-size: $font-clamp-nano;
+
+    &--website {
+      color: $color-tertiary;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    &--code {
+      color: $color-tertiary;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  &--featured-one {
+    grid-area: featured-one;
+  }
+  &--featured-two {
+    grid-area: featured-two;
+  }
+  &--other-one {
+    grid-area: other-one;
+  }
+  &--other-two {
+    grid-area: other-two;
+  }
+  &--other-three {
+    grid-area: other-three;
+  }
+  &--other-four {
+    grid-area: other-four;
+  }
+}

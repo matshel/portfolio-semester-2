@@ -1,0 +1,31 @@
+// button
+.c-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 40px;
+  width: clamp(100px, 20vw, 200px);
+  height: clamp(25px, 10vh, 50px);
+  font-size: $font-clamp-mini;
+  color: black;
+  border-radius: 50px;
+  text-decoration: none;
+  &--resume {
+    margin-top: 0;
+    background-color: $color-primary;
+    font-size: $font-clamp-nano;
+    color: white;
+    height: 30px;
+    max-width: 150px;
+  }
+  &--footer-mail {
+    width: fit-content;
+    border: 2px solid $color-primary;
+    margin-top: 0;
+  }
+  &:hover {
+    background-color: black;
+  }
+}
+// button end

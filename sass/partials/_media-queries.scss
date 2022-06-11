@@ -1,0 +1,28 @@
+@media screen and (min-width: 1081px) {
+  .c-header {
+    width: 90%;
+  }
+  .c-navigation {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    justify-content: flex-end;
+    top: auto;
+    transform: translateY(0);
+    // margin-right: 2%;
+    background: transparent;
+  }
+
+  .c-navigation__burger {
+    display: none;
+  }
+
+  .c-navigation__list-item {
+    opacity: 1;
+    margin-right: 40px;
+  }
+  .c-button {
+    width: 300px;
+  }
+}

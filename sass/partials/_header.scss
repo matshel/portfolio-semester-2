@@ -1,0 +1,30 @@
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  font-family: $font-type-primary;
+}
+
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  &__logo {
+    margin-left: 20px;
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: $color-secondary;
+      font-size: $font-clamp-nano;
+      width: max-content;
+    }
+  }
+}
+/*  header end */

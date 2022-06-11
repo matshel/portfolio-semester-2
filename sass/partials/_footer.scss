@@ -1,0 +1,10 @@
+.test {
+  min-width: 300px;
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  // padding: 10px;
+  color: $color-neutral;
+  font-size: $font-clamp-small;
+}

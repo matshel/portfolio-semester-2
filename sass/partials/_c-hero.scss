@@ -1,0 +1,77 @@
+// hero section
+.l-section--hero {
+  height: 60vh;
+  font-family: $font-type-primary;
+}
+
+.l-container--hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.c-hero {
+  //   background-color: $color-primary;
+  &__intro {
+    @include resets;
+    text-transform: uppercase;
+    font-size: $font-clamp-nano;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: $color-tertiary;
+  }
+  &__name {
+    @include resets;
+    font-size: $font-clamp-big;
+    font-weight: 700;
+  }
+  &__heading {
+    @include resets;
+    font-size: $font-clamp-big;
+    font-weight: 600;
+    color: $color-secondary;
+    line-height: 1;
+    max-width: 700px;
+  }
+  &__cta {
+    display: flex;
+    justify-content: center;
+  }
+  &__copy {
+    @include resets;
+    margin-top: 20px;
+    max-width: 500px;
+    color: $color-secondary;
+  }
+  &__lets-talk-button {
+    margin-right: 10px;
+    border: 2px solid $color-tertiary;
+    font-size: $font-clamp-cta-buttons;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-neutral;
+      border: 2px solid $color-primary;
+    }
+  }
+
+  &__projects-button {
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    font-size: $font-clamp-cta-buttons;
+    color: white;
+    &:hover {
+      border: 2px solid $color-secondary;
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .l-section--hero {
+    height: 65vh;
+  }
+}
+
+// hero section end

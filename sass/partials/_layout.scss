@@ -1,0 +1,112 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  // @include resets;
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.l-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  margin: 0 auto;
+  &--footer {
+    background-color: $color-primary;
+    height: 50vh;
+    min-height: unset;
+    flex-shrink: 0;
+  }
+  &__heading {
+    text-transform: uppercase;
+    margin: 4rem 0 4rem 0;
+  }
+  @media screen and (min-width: 1080px) {
+    &__heading-container {
+      max-width: 1172px;
+    }
+  }
+}
+
+.l-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  &__heading-container {
+    grid-area: heading;
+  }
+  &__heading {
+    font-family: $font-type-primary;
+    text-transform: uppercase;
+    color: $color-tertiary;
+    font-size: $font-clamp-nano;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+  &--featured-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 0 10px 0 10px;
+    grid-template-areas:
+      "heading"
+      "featured-one"
+      "featured-two";
+  }
+  &--other-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 2rem 10px 0 10px;
+    grid-template-areas:
+      "heading"
+      "other-one"
+      "other-two"
+      "other-three"
+      "other-four";
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .l-container {
+    &--featured-projects {
+      grid-template-columns: 1fr 1fr;
+      margin: 0 2rem 0 2rem;
+      max-width: 900px;
+      padding: none;
+      grid-template-areas:
+        "heading heading"
+        "featured-one featured-two";
+    }
+    &--other-projects {
+      grid-template-columns: 1fr 1fr;
+      margin: 2rem 2rem 0 2rem;
+      max-width: 900px;
+      padding: none;
+      grid-template-areas:
+        "heading heading"
+        "other-one other-two"
+        "other-three other-four";
+    }
+    &--footer {
+      min-width: 900px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-container {
+    &--featured-projects {
+      max-width: none;
+    }
+    &--other-projects {
+      max-width: none;
+    }
+  }
+}

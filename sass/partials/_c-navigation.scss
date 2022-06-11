@@ -1,0 +1,58 @@
+.c-navigation {
+  @include resets;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-100%);
+  transition: all 0.33s;
+  background-color: white;
+  font-size: $font-clamp-nano;
+  list-style: none;
+  &__link {
+    text-decoration: none;
+    color: $color-secondary;
+    &:hover {
+      color: $color-primary-tinted;
+    }
+  }
+  &__burger {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    outline: none;
+    z-index: 100;
+  }
+  &__line {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+}
+
+// navigation active
+.nav-active {
+  transform: translateX(0);
+}
+
+// burger animation
+.spin .c-navigation__line--line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.spin .c-navigation__line--line2 {
+  opacity: 0;
+}
+
+.spin .c-navigation__line--line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+// burger animation end
+// navigation end

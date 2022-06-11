@@ -1,0 +1,35 @@
+.l-section--about {
+  width: 100%;
+  height: 50vh;
+}
+
+.l-container--about {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+}
+
+.about {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: $color-secondary;
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__paragraph {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    &__info {
+      flex-direction: row;
+    }
+  }
+}
