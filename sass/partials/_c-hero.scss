@@ -14,7 +14,6 @@
 }
 
 .c-hero {
-  //   background-color: $color-primary;
   &__intro {
     @include resets;
     text-transform: uppercase;
@@ -46,17 +45,6 @@
     max-width: 500px;
     color: $color-secondary;
   }
-  &__lets-talk-button {
-    margin-right: 10px;
-    border: 2px solid $color-tertiary;
-    font-size: $font-clamp-cta-buttons;
-    &:hover {
-      background-color: $color-primary;
-      color: $color-neutral;
-      border: 2px solid $color-primary;
-    }
-  }
-
   &__projects-button {
     background-color: $color-primary;
     border: 2px solid $color-primary;

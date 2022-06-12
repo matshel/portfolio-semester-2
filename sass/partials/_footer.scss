@@ -1,10 +1,11 @@
-.test {
-  min-width: 300px;
-  max-width: 1500px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  // padding: 10px;
-  color: $color-neutral;
-  font-size: $font-clamp-small;
+.footer {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 300px;
+    max-width: 1500px;
+    color: $color-neutral;
+    font-size: $font-clamp-small;
+  }
 }
