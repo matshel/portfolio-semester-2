@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -24,10 +25,10 @@
           </div>
           <ul class="c-navigation">
             <li class="c-navigation__list-item">
-              <a href="https://github.com/matshel" class="c-navigation__link" aria-label="Link to github">Github</a>
+              <a href="https://github.com/matshel" class="c-navigation__link" aria-label="Link to github profile">Github</a>
             </li>
             <li class="c-navigation__list-item">
-              <a class="c-navigation__link" href="#featured-scroll" aria-label="Go to blog posts page">Projects</a>
+              <a class="c-navigation__link" href="#featured-scroll" aria-label="Scroll down to featured projects section">Projects</a>
             </li>
           </ul>
           <div class="c-navigation__burger">
@@ -45,7 +46,7 @@
             <h1 class="c-hero__intro">Front - End Developer</h1>
             <h2 class="c-hero__heading">Portfolio Semester 2 Noroff</h2>
             <div class="c-hero__cta">
-              <a href="#featured-scroll" class="c-hero__projects-button c-button">
+              <a href="#featured-scroll" class="c-hero__projects-button c-button" aria-label="Link featured projects section">
                 <span class="c-button__text">Projects</span>
               </a>
             </div>
@@ -61,24 +62,23 @@
             <h2 class="l-container__heading">Featured Projects</h2>
           </div>
           <div class="card-project card-project--featured-one">
-            <img class="card-project__image" src="images/holidaze.png" alt="" />
+            <img class="card-project__image" src="images/holidaze.png" alt="holidaze website" />
             <h3 class="card-project__title">Holidaze</h3>
             <span class="card-project__technologies"> Next.js, Strapi, CSS-modules </span>
             <p class="card-project__info">A local tourism agency in Bergen connecting renters and hosts</p>
             <div class="card-project__links">
-              <a href="https://6293d45e27be7e0135f7a2d3--cosmic-valkyrie-818ca8.netlify.app/" class="card-project__links--website">Visit the website</a>
-              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-2-matshel" class="card-project__links--code">Look at the code</a>
+              <a href="https://6293d45e27be7e0135f7a2d3--cosmic-valkyrie-818ca8.netlify.app/" class="card-project__links--website" aria-label="Link to holidaze website">Visit the website</a>
+              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-2-matshel" class="card-project__links--code" aria-label="Link to holidaze github repo">Look at the code</a>
             </div>
           </div>
           <div class="card-project card-project--featured-two">
-            <img class="card-project__image" src="images/nordic-chair.png" alt="" />
+            <img class="card-project__image" src="images/nordic-chair.png" alt="nordic chair website" />
             <h3 class="card-project__title">Nordic Chair</h3>
             <span class="card-project__technologies"> HTML, Sass, Wordpress REST-API </span>
             <p class="card-project__info">A site that sells luxury chairs with a nordic design</p>
             <p class="card-project__info">NB! This page has a ready made api with items(shoes) provided by Noroff.</p>
             <div class="card-project__links">
-              <!-- <a href="#" class="card-project__links--website">Visit the website</a> -->
-              <a href="https://github.com/matshel/semester-project-2" class="card-project__links--code">Look at the code</a>
+              <a href="https://github.com/matshel/semester-project-2" class="card-project__links--code" aria-label="Link to nordic chair github repo">Look at the code</a>
             </div>
           </div>
         </div>
@@ -91,13 +91,17 @@
             <h2 class="l-container__heading">Other Projects</h2>
           </div>
           <div class="card-project card-project--other-one">
-            <img class="card-project__image" src="images/frameworks.png" alt="" />
+            <img class="card-project__image" src="images/frameworks.png" alt="frameworks course assignment" />
             <h3 class="card-project__title">Frameworks CA</h3>
             <span class="card-project__technologies"> HTML, CSS, Javascript </span>
             <p class="card-project__info">A simple frontend and fetching items from a API.</p>
             <div class="card-project__links">
-              <!-- <a href="#" class="card-project__links--website">Visit the website</a> -->
-              <a href="https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-matshel" class="card-project__links--code">Look at the code</a>
+              <a
+                href="https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-matshel"
+                class="card-project__links--code"
+                aria-label="Link to frameworks course github assignment repo"
+                >Look at the code</a
+              >
             </div>
           </div>
         </div>
