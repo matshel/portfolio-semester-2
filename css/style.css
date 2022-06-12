@@ -498,18 +498,6 @@ html {
   color: #191a1e;
 }
 
-.c-hero__lets-talk-button {
-  margin-right: 10px;
-  border: 2px solid #707070;
-  font-size: clamp(18px, 3vw, 30px);
-}
-
-.c-hero__lets-talk-button:hover {
-  background-color: #41335b;
-  color: #ffff;
-  border: 2px solid #41335b;
-}
-
 .c-hero__projects-button {
   background-color: #41335b;
   border: 2px solid #41335b;
@@ -580,16 +568,16 @@ html {
   }
 }
 
-.test {
-  min-width: 300px;
-  max-width: 1500px;
-  width: 100%;
+.footer__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  min-width: 300px;
+  max-width: 1500px;
   color: #ffff;
   font-size: clamp(20px, 8vw, 30px);
 }
